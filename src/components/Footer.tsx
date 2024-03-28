@@ -14,7 +14,7 @@ const Footer = () => {
   ]
 
   return (
-    <footer className='bg-white flex-grow-0'>
+    <footer className=' flex-grow-0'>
       <MaxWidthWrapper>
         <div className='border-t border-gray-200'>
           {pathsToMinimize.includes(pathname) ? null : (
@@ -32,12 +32,12 @@ const Footer = () => {
                 <div className='absolute inset-0 overflow-hidden rounded-lg'>
                   <div
                     aria-hidden='true'
-                    className='absolute bg-zinc-50 inset-0 bg-gradient-to-br bg-opacity-90'
+                    className='absolute bg-zinc-50 dark:bg-slate-600 inset-0 bg-gradient-to-br bg-opacity-90'
                   />
                 </div>
 
                 <div className='text-center relative mx-auto max-w-sm'>
-                  <h3 className='font-semibold text-gray-900'>
+                  <h3 className='font-semibold text-gray-900 dark:text-foreground'>
                     Become a seller
                   </h3>
                   <p className='mt-2 text-sm text-muted-foreground'>
@@ -45,8 +45,8 @@ const Footer = () => {
                     digital products, you can do so in
                     minutes.{' '}
                     <Link
-                      href='/sign-in?as=seller'
-                      className='whitespace-nowrap font-medium text-black hover:text-zinc-900'>
+                      href='/#'
+                      className='whitespace-nowrap font-medium text-black hover:text-zinc-900 dark:text-foreground'>
                       Get started &rarr;
                     </Link>
                   </p>
