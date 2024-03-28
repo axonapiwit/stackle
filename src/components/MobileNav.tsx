@@ -13,9 +13,9 @@ import { ModeToggle } from './ModeToggle'
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
-  const [user, setUser] = useState<User | null>(null)
   const router = useRouter()
   const pathname = usePathname()
+  const [user, setUser] = useState<User | null>(null)
   const supabase = createClientComponentClient()
 
   useEffect(() => {

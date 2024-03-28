@@ -18,6 +18,13 @@ const config = {
       },
     },
     extend: {
+      aspectRatio: {
+        '4/3': '4 / 3',
+        '21/5': '21 / 5',
+      },
+      gridTemplateColumns: {
+        fluid: "repeat(auto-fit, minmax(15rem, 1fr))",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

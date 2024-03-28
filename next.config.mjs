@@ -14,4 +14,7 @@ const withPWA = withPWAInit({
 
 export default withPWA({
   reactStrictMode: true,
+  images: {
+      domains: ["fakestoreapi.com"],
+  },
 });
