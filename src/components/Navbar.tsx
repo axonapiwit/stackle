@@ -5,8 +5,7 @@ import { createClient } from "@/utils/supabase/server";
 import { Icons } from './Icons'
 // import NavItems from './NavItems'
 import { buttonVariants } from './ui/button'
-// import Cart from './Cart'
-// import { getServerSideUser } from '@/lib/payload-utils'
+import Cart from './Cart'
 import UserAccountNav from './UserAccountNav'
 import MobileNav from './MobileNav'
 import { ModeToggle } from './ModeToggle';
@@ -73,7 +72,7 @@ const Navbar = async () => {
                   <ModeToggle />
 
                   <div className='ml-4 flow-root lg:ml-6'>
-                    {/* <Cart /> */}
+                    <Cart />
                   </div>
                 </div>
               </div>

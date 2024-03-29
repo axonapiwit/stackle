@@ -55,6 +55,7 @@ const ProtectedPage = () => {
                 image={product.image}
                 rating={product.rating.rate}
                 price={product.price}
+                product={product}
               />
             ))}
           </div>
